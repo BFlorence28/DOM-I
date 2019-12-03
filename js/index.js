@@ -40,3 +40,33 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let ctaimage = document.getElementById("cta-img");
+ctaimage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleimage = document.getElementById("middle-img");
+middleimage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const links= document.getElementsByTagName('a');
+
+links.forEach(link => {
+
+}
+
+
+// const nav = document.querySelectorAll("nav a")
+// nav.forEach ((links, i) =>
+//   nav[i].textContent = siteContent["nav"][]
+// )
+
+
+
+// let navBar = document.querySelectorAll("nav a");
+// navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+// navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+// navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+// navBar[3].textContent = siteContent["nav"]["nav-item-4"];
+// navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+// navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+// // part 3 MVP
+// let green = navBar.forEach(item => item.style.color = "green");
