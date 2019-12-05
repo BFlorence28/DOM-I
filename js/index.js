@@ -38,6 +38,9 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+// IMAGES
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -47,17 +50,67 @@ ctaimage.setAttribute('src', siteContent["cta"]["img-src"])
 let middleimage = document.getElementById("middle-img");
 middleimage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-const links= document.getElementsByTagName('a');
+const links= document.querySelectorAll('a');
 
-links.forEach(link => {
+// NAV 
 
-}
+links.forEach((link, index) => {
+ link.textContent = siteContent["nav"][`nav-item-${index + 1}`]
+});
+
+console.log(links)
+
+// CTA TEXT AND BUTTON TEXT
+
+const ctaText= document.querySelector('h1');
+
+ctaText.textContent = siteContent['cta']['h1']
+
+console.log(ctaText)
 
 
-// const nav = document.querySelectorAll("nav a")
-// nav.forEach ((links, i) =>
-//   nav[i].textContent = siteContent["nav"][]
-// )
+const buttonText= document.querySelector('button');
+
+buttonText.textContent = siteContent['cta']['button']
+
+console.log(buttonText)
+
+
+// MAIN CONTENT Title-TEXT
+
+const h4Tag= document.querySelectorAll('h4');
+
+h4Tag[0].textContent = siteContent['main-content']['features-h4'];
+h4Tag[1].textContent = siteContent['main-content']['about-h4'];
+h4Tag[2].textContent = siteContent['main-content']['services-h4'];
+h4Tag[3].textContent = siteContent['main-content']['product-h4'];
+h4Tag[4].textContent = siteContent['main-content']['vision-h4'];
+h4Tag[5].textContent = siteContent['contact']['contact-h4'];
+
+console.log(h4Tag)
+
+
+
+const pTag= document.querySelectorAll('p');
+
+pTag[0].textContent = siteContent['main-content']['features-content'];
+pTag[1].textContent = siteContent['main-content']['about-content'];
+pTag[2].textContent = siteContent['main-content']['services-content'];
+pTag[3].textContent = siteContent['main-content']['product-content'];
+pTag[4].textContent = siteContent['main-content']['vision-content'];
+
+pTag[5].textContent = siteContent['contact']['address'];
+pTag[6].textContent = siteContent['contact']['phone'];
+pTag[7].textContent = siteContent['contact']['email'];
+
+console.log(pTag)
+
+// FOOTER
+
+const footerText= document.querySelector('footer p');
+footerText.textContent = siteContent["footer"]['copyright']
+
+console.log(footerText)
 
 
 
@@ -69,4 +122,4 @@ links.forEach(link => {
 // navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 // navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 // // part 3 MVP
-// let green = navBar.forEach(item => item.style.color = "green");
+// let green = navBar.forEach(item => item.style.color = "green")
