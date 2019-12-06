@@ -60,6 +60,8 @@ links.forEach((link, index) => {
 
 console.log(links)
 
+
+
 // CTA TEXT AND BUTTON TEXT
 
 const ctaText= document.querySelector('h1');
@@ -89,7 +91,7 @@ h4Tag[5].textContent = siteContent['contact']['contact-h4'];
 
 console.log(h4Tag)
 
-
+// P TAG 
 
 const pTag= document.querySelectorAll('p');
 
@@ -112,14 +114,34 @@ footerText.textContent = siteContent["footer"]['copyright']
 
 console.log(footerText)
 
+// APPEND AND APPENDCHILD
+
+// const appendLink = document.createElement('a');
+// const prependLink = document.createElement('a');
+// const navigation = document.querySelector('nav');
 
 
-// let navBar = document.querySelectorAll("nav a");
-// navBar[0].textContent = siteContent["nav"]["nav-item-1"];
-// navBar[1].textContent = siteContent["nav"]["nav-item-2"];
-// navBar[2].textContent = siteContent["nav"]["nav-item-3"];
-// navBar[3].textContent = siteContent["nav"]["nav-item-4"];
-// navBar[4].textContent = siteContent["nav"]["nav-item-5"];
-// navBar[5].textContent = siteContent["nav"]["nav-item-6"];
-// // part 3 MVP
-// let green = navBar.forEach(item => item.style.color = "green")
+// var node = document.createElement("LI");                 // Create a <li> node
+// var textnode = document.createTextNode("Water");         // Create a text node
+// node.appendChild(textnode);                              // Append the text to <li>
+// document.getElementById("myList").appendChild(node);     // Append <li> to <ul> with id="myList"
+
+
+
+// let navBoxOne = document.querySelector(".navBoxOne")
+// let newElement = document.createElement("a");
+// let newContent = document.createTextNode("This is a link!");
+
+// newElement.append("More Stuff");
+// newElement.appendChild(newContent);
+// navBoxOne.appendChild(newElement);
+
+let navBar = document.querySelectorAll("nav a");
+navBar[0].textContent = siteContent["nav"]["nav-item-1"];
+navBar[1].textContent = siteContent["nav"]["nav-item-2"];
+navBar[2].textContent = siteContent["nav"]["nav-item-3"];
+navBar[3].textContent = siteContent["nav"]["nav-item-4"];
+navBar[4].textContent = siteContent["nav"]["nav-item-5"];
+navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+// task 3 Turn Nav Green
+let green = navBar.forEach(item => item.style.color = "green")
