@@ -181,10 +181,6 @@ navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 // let green = navBar.forEach(item => item.style.color = "green")
 
 
-// const nav = document.querySelectorAll("nav a")
-// nav.forEach ((links, i) =>
-//   nav[i].textContent = siteContent["nav"][]
-// )
 
 //STRETCH
 
